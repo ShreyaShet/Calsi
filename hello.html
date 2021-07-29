@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Js Cal</title>
+    </head>
+    <style>
+    .hello{
+        background-color:black;
+        width: 229px;
+        text-align: center;
+    }
+       input[type="button"]{
+           background-color:plum;
+           width: 50px;
+           border-color:black;
+           
+       }
+       input[type="text"]{
+           width: 220px;
+           border-color: black;
+       }
+    </style>
+    <body>
+        <div class="hello">
+        <form name="display">
+            <table border="1">
+                <tr>
+                    <td colspan="4">
+                        <input type="text" name="textdisplay" value=""/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hello">
+                        <input type="button" value="7" onclick="display.textdisplay.value+='7'"/>
+                    </td>
+                    <td>
+                        <input type="button" value="8"onclick="display.textdisplay.value+='8'"/>
+                    </td>
+                    <td>
+                        <input type="button" value="9"onclick="display.textdisplay.value+='9'"/>
+                    </td>
+                    <td>
+                        <input type="button" value="/"onclick="display.textdisplay.value+='/'"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="4"onclick="display.textdisplay.value+='4'"/>
+                    </td>
+                    <td>
+                        <input type="button" value="5"onclick="display.textdisplay.value+='5'"/>
+                    </td>
+                    <td>
+                        <input type="button" value="6"onclick="display.textdisplay.value+='6'"/>
+                    </td>
+                    <td>
+                        <input type="button" value="*"onclick="display.textdisplay.value+='*'"/>
+                    </td> 
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="1" onclick="display.textdisplay.value+='1'"/>
+                    </td>
+                    <td>
+                        <input type="button" value="2" onclick="display.textdisplay.value+='2'"/>
+                    </td>
+                    <td>
+                        <input type="button" value="3" onclick="display.textdisplay.value+='3'"/>
+                    </td>
+                    <td>
+                        <input type="button" value="+"onclick="display.textdisplay.value+='-'"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="+" onclick="display.textdisplay.value+='+'"/>
+                    </td>
+                    <td>
+                        <input type="button" value="C" onclick="display.textdisplay.value=''"/>
+                    </td>
+                    <td>
+                        <input type="button" value="=" onclick="display.textdisplay.value=eval(display.textdisplay.value)"/>
+                    </td>
+                    <td>
+                        <input type="button" value="0" onclick="display.textdisplay.value+='0'"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    </body>
+</html>
